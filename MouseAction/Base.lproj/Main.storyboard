@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MouseAction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JU8-bg-i1m">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ukh-qy-nit">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ukh-qy-nit" secondAttribute="bottom" id="3r7-Oc-ltX"/>
+                            <constraint firstItem="JU8-bg-i1m" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6UA-LP-YMw"/>
+                            <constraint firstAttribute="trailing" secondItem="Ukh-qy-nit" secondAttribute="trailing" id="6dd-aY-FUw"/>
+                            <constraint firstItem="JU8-bg-i1m" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7cK-LW-zmM"/>
+                            <constraint firstItem="Ukh-qy-nit" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GdV-bj-uVU"/>
+                            <constraint firstItem="JU8-bg-i1m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bQe-6z-Jwe"/>
+                            <constraint firstItem="JU8-bg-i1m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fk6-AZ-BYq"/>
+                            <constraint firstItem="Ukh-qy-nit" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jud-b2-LdQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainImageView" destination="Ukh-qy-nit" id="tpl-L8-dVg"/>
+                        <outlet property="tempImageView" destination="JU8-bg-i1m" id="YZP-gB-yh6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.5" y="90.234375"/>
+        </scene>
+    </scenes>
+</document>
